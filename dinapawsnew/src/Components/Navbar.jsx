@@ -1,17 +1,26 @@
 import "./componentStyling.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <section className="navSection">
       <div className="navComponent">
         <div className="websiteTitle">
-          <h1>Dinapaws</h1>
+          <NavLink to={":"}>
+            <h1>Dinapaws</h1>
+          </NavLink>
         </div>
 
         <div className="navOptions">
-          <p>Home</p>
-          <p>About</p>
-          <p>Polices</p>
+          <NavLink to={".home"}>
+            <p>Home</p>
+          </NavLink>
+          <NavLink to={".about"}>
+            <p>About</p>
+          </NavLink>
+          <NavLink to={".polices"}>
+            <p>Polices</p>
+          </NavLink>
         </div>
       </div>
     </section>
