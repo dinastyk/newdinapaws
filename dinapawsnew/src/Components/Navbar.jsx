@@ -6,19 +6,19 @@ function Navbar() {
     <section className="navSection">
       <div className="navComponent">
         <div className="websiteTitle">
-          <NavLink to={":"}>
+          <NavLink to={"/"}>
             <h1>Dinapaws</h1>
           </NavLink>
         </div>
 
         <div className="navOptions">
-          <NavLink to={".home"}>
+          <NavLink to={"/home"}>
             <p>Home</p>
           </NavLink>
-          <NavLink to={".about"}>
+          <NavLink to={"/about"}>
             <p>About</p>
           </NavLink>
-          <NavLink to={".polices"}>
+          <NavLink to={"/polices"}>
             <p>Polices</p>
           </NavLink>
         </div>
